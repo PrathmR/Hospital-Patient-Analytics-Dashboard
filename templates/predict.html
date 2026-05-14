@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+
+{% block title %}ML Readmission Prediction Tool{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-sm border-0 rounded-3">
+            <div class="card-header bg-white border-bottom-0 pt-4 pb-0 px-4">
+                <h5 class="card-title fw-bold text-primary mb-0">Patient Risk Assessment</h5>
+                <p class="text-muted small mt-1">Enter patient details to predict the 30-day readmission risk using our trained Machine Learning model.</p>
+            </div>
+            <div class="card-body p-4">
+                <form id="predictionForm">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="age" class="form-label fw-semibold">Patient Age</label>
+                            <input type="number" class="form-control" id="age" required min="1" max="120" placeholder="e.g. 65">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="gender" class="form-label fw-semibold">Gender</label>
+                            <select class="form-select" id="gender" required>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="admission_type" class="form-label fw-semibold">Admission Type</label>
+                            <select class="form-select" id="admission_type" required>
+                                <option value="" disabled selected>Select Type</option>
+                                <option value="Emergency">Emergency</option>
+                                <option value="Elective">Elective</option>
+                                <option value="Urgent">Urgent</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="severity" class="form-label fw-semibold">Severity of Illness</label>
+                            <select class="form-select" id="severity" required>
+                                <option value="" disabled selected>Select Severity</option>
+                                <option value="Minor">Minor</option>
+                                <option value="Moderate">Moderate</option>
+                                <option value="Extreme">Extreme</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <label for="lab_procedures" class="form-label fw-semibold">Number of Lab Procedures</label>
+                            <input type="number" class="form-control" id="lab_procedures" required min="1" max="200" placeholder="e.g. 45">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="diagnosis" class="form-label fw-semibold">Diagnosis Code</label>
+                            <select class="form-select" id="diagnosis" required>
+                                <option value="" disabled selected>Select Diagnosis Area</option>
+                                <option value="Cardiology">Cardiology</option>
+                                <option value="Neurology">Neurology</option>
+                                <option value="Oncology">Oncology</option>
+                                <option value="Orthopedics">Orthopedics</option>
+                                <option value="General">General</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <label for="insurance" class="form-label fw-semibold">Insurance Type</label>
+                            <select class="form-select" id="insurance" required>
+                                <option value="" disabled selected>Select Insurance</option>
+                                <option value="Medicare">Medicare</option>
+                                <option value="Medicaid">Medicaid</option>
+                                <option value="Private">Private</option>
+                                <option value="Self-Pay">Self-Pay</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="department" class="form-label fw-semibold">Department</label>
+                            <select class="form-select" id="department" required>
+                                <option value="" disabled selected>Select Department</option>
+                                <option value="ICU">ICU</option>
+                                <option value="General Ward">General Ward</option>
+                                <option value="Surgery">Surgery</option>
+                                <option value="ER">ER</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg fw-bold" id="predictBtn">
+                            <i class="fas fa-brain me-2"></i>Predict Risk
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Result Section -->
+                <div id="resultSection" class="mt-4 text-center d-none">
+                    <hr>
+                    <h5 class="fw-bold mb-3">Prediction Result</h5>
+                    <div class="d-flex justify-content-center align-items-center mb-2">
+                        <div id="riskBadge" class="badge fs-4 py-2 px-4 rounded-pill me-3">--</div>
+                        <h3 class="mb-0 text-secondary">Risk Level</h3>
+                    </div>
+                    <p class="text-muted mt-2" id="probText"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.getElementById('predictionForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const btn = document.getElementById('predictBtn');
+    btn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing...';
+    btn.disabled = true;
+
+    const data = {
+        age: document.getElementById('age').value,
+        gender: document.getElementById('gender').value,
+        admission_type: document.getElementById('admission_type').value,
+        severity: document.getElementById('severity').value,
+        lab_procedures: document.getElementById('lab_procedures').value,
+        diagnosis: document.getElementById('diagnosis').value,
+        insurance: document.getElementById('insurance').value,
+        department: document.getElementById('department').value
+    };
+
+    fetch('/api/predict', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(result => {
+        btn.innerHTML = '<i class="fas fa-brain me-2"></i>Predict Risk';
+        btn.disabled = false;
+
+        if(result.error) {
+            alert('Error: ' + result.error);
+            return;
+        }
+
+        const resSec = document.getElementById('resultSection');
+        const badge = document.getElementById('riskBadge');
+        const prob = document.getElementById('probText');
+
+        resSec.classList.remove('d-none');
+        
+        if(result.risk_level === 'High') {
+            badge.className = 'badge bg-danger fs-4 py-2 px-4 rounded-pill me-3';
+            badge.textContent = 'HIGH RISK';
+            prob.innerHTML = `Model Confidence: <strong>${result.probability}%</strong> probability of readmission within 30 days.`;
+        } else {
+            badge.className = 'badge bg-success fs-4 py-2 px-4 rounded-pill me-3';
+            badge.textContent = 'LOW RISK';
+            prob.innerHTML = `Model Confidence: <strong>${100 - result.probability}%</strong> probability of NO readmission.`;
+        }
+    })
+    .catch(err => {
+        btn.innerHTML = '<i class="fas fa-brain me-2"></i>Predict Risk';
+        btn.disabled = false;
+        alert('An error occurred during prediction.');
+        console.error(err);
+    });
+});
+</script>
+{% endblock %}

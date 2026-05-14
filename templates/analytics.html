@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% block title %}Patient Analytics{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- Trend Chart -->
+    <div class="col-md-8 mb-4">
+        <div class="chart-container h-100">
+            <h5 class="fw-bold text-secondary mb-4">Admission Trends (Last 6 Months)</h5>
+            <div style="height: 300px;">
+                <canvas id="trendChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Gender Chart -->
+    <div class="col-md-4 mb-4">
+        <div class="chart-container h-100">
+            <h5 class="fw-bold text-secondary mb-4">Gender Distribution</h5>
+            <div style="height: 300px;">
+                <canvas id="genderChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Age Groups -->
+    <div class="col-md-6 mb-4">
+        <div class="chart-container h-100">
+            <h5 class="fw-bold text-secondary mb-4">Age Demographics</h5>
+            <div style="height: 300px;">
+                <canvas id="ageChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Insurance Type -->
+    <div class="col-md-6 mb-4">
+        <div class="chart-container h-100">
+            <h5 class="fw-bold text-secondary mb-4">Insurance Types</h5>
+            <div style="height: 300px;">
+                <canvas id="insuranceChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('/api/analytics')
+        .then(response => response.json())
+        .then(data => {
+            if(!data.trend) return;
+
+            // Common Chart Options
+            const commonOptions = {
+                responsive: true,
+                maintainAspectRatio: false
+            };
+
+            // Trend Line Chart
+            new Chart(document.getElementById('trendChart').getContext('2d'), {
+                type: 'line',
+                data: {
+                    labels: data.trend.labels,
+                    datasets: [{
+                        label: 'Admissions',
+                        data: data.trend.data,
+                        borderColor: '#0d6efd',
+                        backgroundColor: 'rgba(13, 110, 253, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    ...commonOptions,
+                    plugins: { legend: { display: false } },
+                    scales: { y: { beginAtZero: true } }
+                }
+            });
+
+            // Gender Pie Chart
+            new Chart(document.getElementById('genderChart').getContext('2d'), {
+                type: 'pie',
+                data: {
+                    labels: Object.keys(data.gender),
+                    datasets: [{
+                        data: Object.values(data.gender),
+                        backgroundColor: ['#0dcaf0', '#e83e8c']
+                    }]
+                },
+                options: { ...commonOptions, plugins: { legend: { position: 'bottom' } } }
+            });
+
+            // Age Bar Chart
+            new Chart(document.getElementById('ageChart').getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(data.age),
+                    datasets: [{
+                        label: 'Patient Count',
+                        data: Object.values(data.age),
+                        backgroundColor: '#198754',
+                        borderRadius: 5
+                    }]
+                },
+                options: { ...commonOptions, plugins: { legend: { display: false } } }
+            });
+
+            // Insurance Doughnut Chart
+            new Chart(document.getElementById('insuranceChart').getContext('2d'), {
+                type: 'doughnut',
+                data: {
+                    labels: Object.keys(data.insurance),
+                    datasets: [{
+                        data: Object.values(data.insurance),
+                        backgroundColor: ['#ffc107', '#6f42c1', '#fd7e14', '#20c997']
+                    }]
+                },
+                options: { ...commonOptions, plugins: { legend: { position: 'right' } } }
+            });
+        });
+});
+</script>
+{% endblock %}

@@ -1,0 +1,501 @@
+PatientID,Age,Gender,AdmissionType,SeverityOfIllness,NumLabProcedures,DiagnosisCode,InsuranceType,Department,LOS,Readmitted
+P0001,69,Female,Urgent,Moderate,36,Orthopedics,Medicare,ICU,13,1
+P0002,32,Female,Urgent,Extreme,98,Cardiology,Medicare,ER,21,1
+P0003,89,Male,Emergency,Minor,66,General,Self-Pay,ICU,19,1
+P0004,78,Male,Urgent,Extreme,79,Oncology,Medicaid,Surgery,21,1
+P0005,38,Male,Urgent,Minor,34,Neurology,Self-Pay,General Ward,19,0
+P0006,41,Female,Emergency,Extreme,36,Oncology,Medicaid,Surgery,25,1
+P0007,20,Female,Elective,Moderate,6,Neurology,Medicare,General Ward,25,0
+P0008,39,Male,Elective,Extreme,39,Oncology,Private,ICU,22,1
+P0009,70,Male,Elective,Extreme,42,Neurology,Medicaid,Surgery,17,1
+P0010,19,Female,Emergency,Minor,58,Orthopedics,Medicare,Surgery,23,0
+P0011,47,Female,Urgent,Moderate,12,Neurology,Self-Pay,ICU,23,0
+P0012,55,Male,Elective,Extreme,3,Neurology,Medicaid,Surgery,10,1
+P0013,19,Male,Elective,Moderate,18,Cardiology,Private,ER,10,0
+P0014,81,Female,Emergency,Extreme,40,Neurology,Self-Pay,General Ward,4,1
+P0015,77,Male,Elective,Extreme,21,Cardiology,Self-Pay,General Ward,8,1
+P0016,38,Male,Emergency,Moderate,15,General,Medicare,General Ward,22,0
+P0017,50,Male,Urgent,Extreme,97,Cardiology,Medicaid,ER,20,1
+P0018,75,Female,Emergency,Moderate,99,Orthopedics,Self-Pay,General Ward,20,1
+P0019,39,Female,Emergency,Extreme,26,Cardiology,Private,ICU,18,1
+P0020,66,Female,Emergency,Minor,8,General,Medicaid,Surgery,14,0
+P0021,76,Female,Emergency,Moderate,94,Orthopedics,Private,ER,18,1
+P0022,59,Female,Urgent,Extreme,87,Oncology,Self-Pay,General Ward,28,1
+P0023,77,Female,Urgent,Extreme,42,Oncology,Private,ICU,14,1
+P0024,32,Female,Elective,Minor,44,Cardiology,Medicare,Surgery,20,0
+P0025,79,Male,Urgent,Moderate,14,Cardiology,Private,Surgery,21,0
+P0026,79,Male,Urgent,Extreme,78,General,Medicaid,ER,24,1
+P0027,64,Male,Elective,Minor,2,General,Private,ER,15,0
+P0028,79,Male,Urgent,Extreme,37,Neurology,Private,ER,22,1
+P0029,68,Male,Emergency,Moderate,69,General,Medicare,ICU,4,1
+P0030,72,Male,Emergency,Extreme,38,Neurology,Private,ICU,13,1
+P0031,81,Male,Elective,Extreme,41,Orthopedics,Private,ER,27,1
+P0032,20,Female,Elective,Extreme,62,Cardiology,Self-Pay,General Ward,23,1
+P0033,68,Female,Elective,Extreme,60,Orthopedics,Self-Pay,Surgery,8,1
+P0034,24,Male,Emergency,Minor,14,General,Medicaid,Surgery,18,0
+P0035,38,Male,Urgent,Minor,89,Orthopedics,Self-Pay,ICU,12,0
+P0036,56,Female,Emergency,Moderate,84,Orthopedics,Self-Pay,Surgery,23,0
+P0037,35,Male,Elective,Minor,2,Orthopedics,Self-Pay,General Ward,14,0
+P0038,21,Male,Urgent,Minor,70,General,Self-Pay,Surgery,2,0
+P0039,77,Female,Urgent,Moderate,17,Orthopedics,Medicare,ICU,18,0
+P0040,31,Male,Emergency,Minor,89,Neurology,Self-Pay,ICU,24,0
+P0041,26,Female,Elective,Minor,28,General,Medicare,General Ward,2,0
+P0042,70,Male,Emergency,Moderate,66,Orthopedics,Medicare,General Ward,11,0
+P0043,19,Female,Urgent,Moderate,35,General,Self-Pay,Surgery,9,0
+P0044,77,Female,Emergency,Moderate,5,Oncology,Private,Surgery,12,0
+P0045,88,Female,Emergency,Extreme,65,Neurology,Medicare,ICU,17,1
+P0046,61,Male,Elective,Extreme,40,Orthopedics,Private,General Ward,15,1
+P0047,25,Female,Elective,Moderate,76,Oncology,Private,General Ward,25,0
+P0048,64,Male,Urgent,Moderate,56,Oncology,Self-Pay,General Ward,17,0
+P0049,52,Male,Emergency,Moderate,36,General,Medicaid,Surgery,26,0
+P0050,53,Male,Emergency,Extreme,45,Oncology,Self-Pay,General Ward,29,1
+P0051,67,Male,Emergency,Extreme,23,Neurology,Medicaid,ICU,26,1
+P0052,21,Female,Urgent,Minor,47,Neurology,Medicaid,ICU,18,0
+P0053,19,Female,Urgent,Minor,31,Cardiology,Self-Pay,Surgery,22,0
+P0054,23,Male,Elective,Moderate,11,Neurology,Self-Pay,ER,6,0
+P0055,71,Male,Elective,Extreme,10,Oncology,Medicaid,Surgery,17,1
+P0056,21,Female,Elective,Extreme,67,Neurology,Self-Pay,ER,23,1
+P0057,71,Male,Emergency,Extreme,14,General,Medicaid,General Ward,24,1
+P0058,80,Female,Emergency,Moderate,80,Cardiology,Private,Surgery,18,0
+P0059,35,Male,Elective,Minor,74,Oncology,Self-Pay,ICU,8,0
+P0060,61,Male,Emergency,Moderate,93,Cardiology,Private,General Ward,9,1
+P0061,51,Female,Elective,Minor,10,Oncology,Medicare,ICU,6,0
+P0062,79,Male,Urgent,Minor,76,General,Private,General Ward,5,0
+P0063,31,Female,Elective,Moderate,94,Cardiology,Private,Surgery,12,0
+P0064,65,Male,Urgent,Minor,1,Orthopedics,Medicaid,ER,25,0
+P0065,32,Male,Emergency,Minor,5,Oncology,Private,General Ward,29,0
+P0066,89,Male,Elective,Extreme,20,Orthopedics,Self-Pay,ER,28,1
+P0067,79,Female,Emergency,Minor,8,Cardiology,Medicaid,General Ward,11,0
+P0068,57,Male,Urgent,Moderate,43,Orthopedics,Medicare,ICU,25,0
+P0069,70,Male,Urgent,Moderate,76,Orthopedics,Self-Pay,ICU,1,1
+P0070,41,Male,Urgent,Minor,1,Cardiology,Medicare,General Ward,11,0
+P0071,43,Male,Emergency,Extreme,57,General,Private,ER,19,1
+P0072,77,Female,Emergency,Extreme,64,Orthopedics,Self-Pay,Surgery,9,1
+P0073,58,Female,Emergency,Minor,84,Orthopedics,Self-Pay,Surgery,27,0
+P0074,46,Male,Emergency,Minor,28,General,Medicare,ICU,2,0
+P0075,32,Female,Urgent,Moderate,37,Orthopedics,Self-Pay,Surgery,12,0
+P0076,62,Male,Urgent,Minor,47,Orthopedics,Self-Pay,ICU,4,0
+P0077,82,Male,Elective,Extreme,76,Orthopedics,Self-Pay,Surgery,4,1
+P0078,88,Male,Elective,Minor,37,Neurology,Private,General Ward,18,0
+P0079,26,Female,Emergency,Moderate,49,General,Medicare,ICU,15,0
+P0080,18,Female,Urgent,Moderate,44,Orthopedics,Self-Pay,ICU,19,0
+P0081,25,Female,Urgent,Moderate,56,General,Medicaid,General Ward,13,0
+P0082,80,Female,Urgent,Moderate,28,Oncology,Medicaid,ICU,19,0
+P0083,28,Female,Elective,Moderate,79,Oncology,Medicaid,Surgery,17,0
+P0084,25,Female,Elective,Minor,6,Orthopedics,Medicaid,Surgery,6,0
+P0085,52,Female,Urgent,Minor,61,General,Private,ICU,16,0
+P0086,52,Female,Urgent,Minor,20,General,Self-Pay,Surgery,24,0
+P0087,50,Female,Urgent,Minor,78,General,Medicare,ER,12,0
+P0088,22,Male,Elective,Moderate,2,Neurology,Self-Pay,ICU,19,0
+P0089,58,Female,Urgent,Extreme,73,Oncology,Private,General Ward,5,1
+P0090,45,Female,Urgent,Minor,37,General,Medicaid,ER,17,0
+P0091,24,Female,Emergency,Extreme,20,General,Private,ICU,26,1
+P0092,89,Female,Emergency,Minor,26,Neurology,Self-Pay,General Ward,23,0
+P0093,29,Female,Elective,Minor,29,Neurology,Medicare,Surgery,26,0
+P0094,51,Female,Urgent,Extreme,1,General,Private,General Ward,29,1
+P0095,50,Female,Urgent,Moderate,35,Cardiology,Medicare,ER,1,0
+P0096,65,Female,Emergency,Minor,70,General,Private,Surgery,28,1
+P0097,40,Female,Elective,Minor,59,General,Medicare,ICU,27,0
+P0098,79,Female,Emergency,Minor,69,Neurology,Medicare,Surgery,25,0
+P0099,54,Female,Emergency,Extreme,33,Neurology,Medicaid,ICU,24,1
+P0100,61,Male,Emergency,Moderate,51,General,Medicare,ICU,23,0
+P0101,52,Male,Emergency,Extreme,78,General,Medicaid,General Ward,10,1
+P0102,82,Female,Urgent,Extreme,12,General,Self-Pay,General Ward,15,1
+P0103,64,Female,Urgent,Moderate,20,Neurology,Self-Pay,General Ward,23,0
+P0104,20,Male,Emergency,Extreme,53,General,Medicaid,ER,21,1
+P0105,18,Female,Elective,Moderate,88,General,Medicaid,ER,21,0
+P0106,22,Male,Elective,Minor,43,Orthopedics,Private,General Ward,11,0
+P0107,31,Male,Elective,Moderate,98,Cardiology,Private,ER,13,0
+P0108,44,Male,Elective,Minor,89,Oncology,Private,Surgery,5,0
+P0109,26,Male,Emergency,Extreme,50,Cardiology,Self-Pay,Surgery,1,1
+P0110,32,Male,Urgent,Extreme,29,Orthopedics,Private,ER,24,1
+P0111,59,Female,Elective,Minor,57,Oncology,Medicare,ER,12,0
+P0112,68,Male,Emergency,Extreme,39,General,Medicare,Surgery,11,1
+P0113,80,Female,Elective,Moderate,95,Orthopedics,Private,ICU,17,0
+P0114,69,Female,Elective,Minor,56,General,Medicare,Surgery,4,0
+P0115,21,Male,Emergency,Extreme,43,Neurology,Self-Pay,Surgery,15,1
+P0116,40,Male,Urgent,Minor,50,Orthopedics,Medicare,ER,25,0
+P0117,32,Female,Urgent,Moderate,23,Neurology,Self-Pay,Surgery,9,0
+P0118,60,Male,Emergency,Moderate,44,Orthopedics,Medicaid,ER,21,0
+P0119,46,Male,Urgent,Extreme,38,Orthopedics,Medicaid,ER,20,1
+P0120,53,Female,Emergency,Moderate,84,Neurology,Medicaid,General Ward,19,0
+P0121,30,Female,Emergency,Minor,23,Oncology,Medicaid,Surgery,19,0
+P0122,49,Male,Emergency,Moderate,45,Cardiology,Medicare,ICU,12,0
+P0123,88,Female,Urgent,Minor,52,General,Private,General Ward,5,1
+P0124,76,Male,Emergency,Minor,80,Orthopedics,Medicare,ER,10,0
+P0125,45,Male,Elective,Moderate,50,General,Self-Pay,ER,17,0
+P0126,83,Male,Urgent,Extreme,8,Neurology,Medicare,ICU,5,1
+P0127,59,Female,Urgent,Moderate,85,General,Medicare,ER,22,0
+P0128,62,Female,Urgent,Minor,1,Neurology,Self-Pay,Surgery,16,0
+P0129,79,Female,Urgent,Minor,8,General,Medicaid,General Ward,7,0
+P0130,74,Female,Elective,Moderate,29,Cardiology,Medicaid,ER,28,0
+P0131,23,Female,Urgent,Extreme,96,Cardiology,Medicaid,ER,9,1
+P0132,45,Male,Urgent,Extreme,5,Cardiology,Private,ICU,3,1
+P0133,45,Male,Emergency,Minor,86,Cardiology,Self-Pay,Surgery,15,0
+P0134,61,Male,Urgent,Minor,47,Cardiology,Self-Pay,ER,16,0
+P0135,47,Male,Elective,Extreme,34,Cardiology,Medicare,ICU,18,1
+P0136,79,Female,Elective,Moderate,65,Neurology,Private,ER,14,1
+P0137,79,Male,Elective,Minor,55,Orthopedics,Medicaid,ICU,3,0
+P0138,18,Female,Elective,Minor,90,General,Private,ICU,12,0
+P0139,44,Male,Urgent,Extreme,43,Cardiology,Self-Pay,Surgery,9,1
+P0140,79,Female,Urgent,Moderate,74,Neurology,Self-Pay,ER,28,1
+P0141,20,Female,Elective,Extreme,30,Neurology,Medicare,Surgery,7,1
+P0142,87,Male,Elective,Moderate,82,Neurology,Medicare,ICU,9,1
+P0143,89,Male,Urgent,Moderate,17,Orthopedics,Self-Pay,General Ward,13,0
+P0144,44,Male,Elective,Moderate,26,General,Medicaid,ER,18,0
+P0145,26,Male,Emergency,Minor,8,Orthopedics,Medicaid,General Ward,5,0
+P0146,79,Female,Elective,Extreme,47,Oncology,Private,ER,13,1
+P0147,54,Male,Elective,Extreme,76,Neurology,Self-Pay,Surgery,4,1
+P0148,68,Male,Emergency,Moderate,91,Oncology,Self-Pay,Surgery,2,0
+P0149,61,Female,Emergency,Minor,72,Cardiology,Medicaid,Surgery,16,1
+P0150,41,Male,Urgent,Minor,89,Cardiology,Medicaid,Surgery,9,0
+P0151,76,Male,Urgent,Extreme,46,Orthopedics,Self-Pay,Surgery,9,1
+P0152,49,Male,Emergency,Minor,68,General,Medicare,General Ward,6,0
+P0153,69,Male,Emergency,Minor,33,Oncology,Self-Pay,Surgery,11,0
+P0154,79,Male,Urgent,Moderate,1,General,Self-Pay,ICU,22,0
+P0155,75,Female,Elective,Minor,19,Orthopedics,Medicaid,ICU,24,0
+P0156,69,Male,Emergency,Moderate,31,Cardiology,Medicaid,General Ward,22,0
+P0157,29,Male,Urgent,Extreme,80,General,Medicare,ER,1,1
+P0158,56,Male,Elective,Minor,14,General,Medicare,ICU,4,0
+P0159,19,Male,Emergency,Extreme,53,Cardiology,Private,ER,13,1
+P0160,20,Male,Elective,Extreme,48,Oncology,Self-Pay,General Ward,23,1
+P0161,73,Female,Urgent,Minor,69,Cardiology,Medicaid,ER,13,1
+P0162,76,Male,Emergency,Minor,90,General,Medicare,ER,13,0
+P0163,19,Female,Elective,Extreme,62,Oncology,Private,ER,2,1
+P0164,19,Female,Emergency,Minor,92,Oncology,Private,ER,9,0
+P0165,71,Male,Elective,Moderate,66,Cardiology,Medicaid,General Ward,24,0
+P0166,18,Male,Urgent,Moderate,64,General,Medicaid,ICU,8,0
+P0167,36,Male,Urgent,Minor,70,Orthopedics,Private,Surgery,7,0
+P0168,19,Male,Emergency,Extreme,63,General,Medicare,ER,4,1
+P0169,70,Female,Elective,Minor,73,Neurology,Private,ICU,18,1
+P0170,61,Male,Emergency,Minor,33,Orthopedics,Self-Pay,ICU,3,0
+P0171,49,Male,Emergency,Extreme,41,Oncology,Self-Pay,General Ward,28,1
+P0172,87,Male,Elective,Extreme,89,Orthopedics,Medicaid,ICU,6,1
+P0173,49,Male,Elective,Moderate,48,Oncology,Medicare,General Ward,12,0
+P0174,85,Male,Elective,Extreme,13,Oncology,Medicare,ER,12,1
+P0175,72,Male,Urgent,Moderate,73,Orthopedics,Self-Pay,ER,21,0
+P0176,73,Female,Emergency,Extreme,77,Oncology,Private,Surgery,28,1
+P0177,34,Female,Emergency,Minor,31,Oncology,Medicaid,Surgery,8,0
+P0178,55,Male,Urgent,Moderate,75,Neurology,Private,Surgery,22,0
+P0179,41,Male,Elective,Moderate,68,General,Private,ICU,22,0
+P0180,86,Male,Urgent,Moderate,98,General,Private,ER,1,1
+P0181,87,Female,Urgent,Minor,4,Neurology,Medicare,General Ward,4,0
+P0182,28,Male,Urgent,Minor,19,Orthopedics,Self-Pay,Surgery,21,0
+P0183,33,Female,Emergency,Minor,70,Cardiology,Medicare,General Ward,28,0
+P0184,76,Male,Urgent,Minor,98,Cardiology,Self-Pay,General Ward,11,0
+P0185,87,Male,Emergency,Minor,82,Cardiology,Medicaid,Surgery,3,1
+P0186,20,Male,Emergency,Moderate,13,Neurology,Medicaid,ER,13,0
+P0187,37,Male,Emergency,Minor,23,Neurology,Private,Surgery,25,0
+P0188,76,Female,Elective,Moderate,83,Oncology,Self-Pay,General Ward,17,1
+P0189,53,Female,Emergency,Minor,75,Cardiology,Self-Pay,Surgery,22,0
+P0190,36,Male,Emergency,Extreme,1,Orthopedics,Self-Pay,General Ward,22,1
+P0191,84,Male,Elective,Moderate,88,Orthopedics,Private,General Ward,10,1
+P0192,36,Female,Emergency,Extreme,54,Cardiology,Private,Surgery,21,1
+P0193,37,Female,Urgent,Moderate,71,Cardiology,Medicaid,ICU,12,0
+P0194,88,Female,Urgent,Extreme,89,Cardiology,Medicare,Surgery,15,1
+P0195,69,Female,Emergency,Minor,85,Neurology,Self-Pay,ICU,21,0
+P0196,50,Male,Elective,Minor,15,Neurology,Self-Pay,General Ward,10,0
+P0197,57,Female,Urgent,Minor,65,Neurology,Medicare,General Ward,14,1
+P0198,56,Male,Elective,Moderate,76,General,Self-Pay,ICU,13,0
+P0199,18,Female,Elective,Extreme,71,Orthopedics,Private,General Ward,5,1
+P0200,28,Female,Urgent,Minor,15,Orthopedics,Private,ICU,6,0
+P0201,74,Female,Elective,Extreme,21,Oncology,Self-Pay,ICU,24,1
+P0202,67,Female,Urgent,Extreme,19,Neurology,Private,General Ward,2,1
+P0203,40,Female,Elective,Minor,60,General,Private,ER,22,0
+P0204,48,Male,Urgent,Minor,93,General,Self-Pay,ICU,17,0
+P0205,59,Male,Emergency,Extreme,89,Orthopedics,Medicaid,Surgery,4,1
+P0206,24,Female,Urgent,Minor,33,Neurology,Medicare,Surgery,14,0
+P0207,33,Female,Urgent,Minor,49,Oncology,Private,General Ward,10,0
+P0208,77,Male,Urgent,Minor,96,Neurology,Medicaid,ER,3,1
+P0209,19,Female,Urgent,Moderate,35,Cardiology,Private,General Ward,25,0
+P0210,18,Female,Elective,Extreme,44,Neurology,Private,ER,3,1
+P0211,65,Male,Emergency,Extreme,90,Cardiology,Medicare,ICU,15,1
+P0212,29,Female,Urgent,Moderate,11,Cardiology,Private,ICU,6,0
+P0213,86,Female,Elective,Extreme,99,Oncology,Medicare,ICU,17,1
+P0214,54,Male,Emergency,Minor,72,Orthopedics,Medicare,ICU,12,0
+P0215,49,Male,Emergency,Extreme,78,Neurology,Medicare,Surgery,22,1
+P0216,26,Male,Emergency,Minor,74,Cardiology,Medicaid,Surgery,20,0
+P0217,36,Female,Emergency,Moderate,66,Neurology,Self-Pay,General Ward,24,0
+P0218,65,Male,Urgent,Minor,46,Orthopedics,Medicaid,ER,29,0
+P0219,20,Male,Urgent,Extreme,9,Orthopedics,Self-Pay,ICU,11,1
+P0220,37,Male,Elective,Extreme,3,General,Self-Pay,ICU,25,1
+P0221,41,Male,Elective,Extreme,85,Orthopedics,Medicare,ER,4,1
+P0222,71,Male,Elective,Moderate,26,Oncology,Private,ER,26,0
+P0223,50,Male,Emergency,Moderate,72,Cardiology,Medicare,General Ward,28,0
+P0224,41,Female,Emergency,Extreme,48,General,Private,ER,26,1
+P0225,89,Female,Urgent,Minor,66,Oncology,Self-Pay,ICU,6,1
+P0226,53,Male,Emergency,Moderate,70,Neurology,Medicare,ICU,1,0
+P0227,55,Male,Emergency,Extreme,28,Cardiology,Private,ICU,20,1
+P0228,42,Male,Emergency,Extreme,93,Orthopedics,Medicaid,ICU,23,1
+P0229,35,Female,Elective,Moderate,26,Cardiology,Private,ICU,28,0
+P0230,83,Female,Elective,Moderate,25,Neurology,Medicare,General Ward,16,0
+P0231,71,Female,Urgent,Moderate,12,General,Medicaid,ICU,15,0
+P0232,52,Female,Emergency,Minor,5,General,Private,General Ward,17,0
+P0233,78,Female,Emergency,Minor,98,General,Private,ICU,8,1
+P0234,58,Female,Urgent,Extreme,48,Orthopedics,Private,Surgery,28,1
+P0235,50,Female,Emergency,Moderate,37,Oncology,Private,Surgery,26,0
+P0236,85,Female,Emergency,Minor,79,Oncology,Private,Surgery,12,0
+P0237,50,Female,Elective,Moderate,44,Cardiology,Medicaid,Surgery,27,0
+P0238,31,Male,Urgent,Extreme,15,Orthopedics,Self-Pay,General Ward,22,1
+P0239,38,Male,Urgent,Minor,43,General,Medicaid,General Ward,21,0
+P0240,65,Male,Urgent,Minor,48,General,Medicaid,ER,10,0
+P0241,37,Male,Urgent,Minor,87,Neurology,Medicaid,ICU,27,0
+P0242,25,Female,Elective,Extreme,70,Neurology,Self-Pay,Surgery,15,1
+P0243,24,Female,Elective,Moderate,46,General,Medicare,General Ward,9,0
+P0244,84,Male,Emergency,Minor,43,General,Self-Pay,ICU,2,0
+P0245,34,Female,Emergency,Extreme,21,Orthopedics,Medicaid,ICU,5,1
+P0246,50,Male,Emergency,Moderate,23,Oncology,Private,General Ward,6,0
+P0247,65,Female,Emergency,Extreme,80,Neurology,Private,Surgery,7,1
+P0248,76,Male,Elective,Moderate,47,Oncology,Medicaid,ER,21,0
+P0249,39,Female,Urgent,Extreme,15,Orthopedics,Private,ICU,25,1
+P0250,47,Female,Elective,Moderate,25,General,Medicaid,ER,1,0
+P0251,55,Male,Emergency,Minor,36,Oncology,Private,Surgery,23,0
+P0252,68,Female,Elective,Moderate,75,General,Self-Pay,Surgery,26,0
+P0253,71,Male,Urgent,Extreme,51,General,Medicare,ER,7,1
+P0254,25,Male,Urgent,Extreme,15,Cardiology,Medicare,Surgery,20,1
+P0255,44,Male,Elective,Moderate,68,Oncology,Self-Pay,ICU,25,0
+P0256,44,Male,Elective,Minor,21,Oncology,Self-Pay,ER,12,0
+P0257,38,Female,Elective,Minor,13,General,Medicaid,Surgery,16,0
+P0258,47,Female,Emergency,Moderate,86,Orthopedics,Medicaid,ER,16,1
+P0259,45,Female,Elective,Moderate,19,Cardiology,Medicaid,ICU,11,0
+P0260,81,Male,Elective,Extreme,34,General,Private,Surgery,21,1
+P0261,86,Female,Elective,Minor,78,Neurology,Medicaid,ICU,4,1
+P0262,78,Male,Urgent,Moderate,68,Neurology,Self-Pay,Surgery,13,1
+P0263,65,Female,Urgent,Minor,52,Cardiology,Medicare,General Ward,7,0
+P0264,36,Female,Emergency,Moderate,27,Orthopedics,Private,Surgery,4,0
+P0265,21,Female,Emergency,Moderate,29,General,Medicaid,ER,15,0
+P0266,52,Male,Urgent,Minor,28,Oncology,Private,Surgery,19,0
+P0267,81,Female,Urgent,Moderate,35,Cardiology,Private,ICU,9,0
+P0268,66,Female,Urgent,Moderate,8,Orthopedics,Medicaid,ICU,11,0
+P0269,34,Male,Elective,Extreme,16,Oncology,Private,Surgery,8,1
+P0270,61,Female,Elective,Moderate,36,Neurology,Medicare,ER,1,0
+P0271,47,Male,Urgent,Moderate,30,Neurology,Self-Pay,General Ward,23,0
+P0272,63,Female,Elective,Moderate,18,Oncology,Self-Pay,ER,25,0
+P0273,23,Male,Elective,Extreme,2,Cardiology,Medicare,General Ward,24,1
+P0274,54,Male,Emergency,Minor,49,Neurology,Private,ICU,8,0
+P0275,41,Female,Urgent,Extreme,77,General,Medicaid,ER,13,1
+P0276,63,Male,Urgent,Extreme,4,Oncology,Private,General Ward,22,1
+P0277,70,Male,Elective,Minor,90,Oncology,Medicare,Surgery,27,0
+P0278,77,Male,Urgent,Extreme,89,Neurology,Private,ICU,4,1
+P0279,80,Male,Emergency,Minor,94,Cardiology,Self-Pay,Surgery,8,0
+P0280,49,Male,Emergency,Extreme,75,General,Private,ICU,3,1
+P0281,50,Male,Emergency,Minor,7,Cardiology,Medicare,ER,29,0
+P0282,84,Female,Urgent,Moderate,95,Orthopedics,Self-Pay,ER,9,1
+P0283,35,Male,Urgent,Extreme,74,Orthopedics,Private,ICU,29,1
+P0284,42,Male,Urgent,Extreme,39,Neurology,Private,ICU,2,1
+P0285,71,Female,Urgent,Extreme,13,Neurology,Self-Pay,ICU,2,1
+P0286,75,Female,Urgent,Extreme,31,Neurology,Medicaid,ER,28,1
+P0287,84,Female,Emergency,Moderate,71,Orthopedics,Self-Pay,General Ward,13,0
+P0288,63,Female,Elective,Extreme,63,Cardiology,Medicaid,Surgery,15,1
+P0289,41,Female,Emergency,Moderate,56,Cardiology,Medicare,Surgery,28,0
+P0290,49,Female,Urgent,Moderate,42,Neurology,Medicare,ER,23,0
+P0291,64,Female,Emergency,Moderate,61,General,Self-Pay,Surgery,12,0
+P0292,40,Male,Urgent,Moderate,42,Cardiology,Self-Pay,ICU,26,0
+P0293,83,Male,Urgent,Minor,56,Orthopedics,Medicare,General Ward,4,0
+P0294,44,Female,Emergency,Minor,36,Oncology,Medicaid,Surgery,26,0
+P0295,19,Male,Urgent,Extreme,84,Oncology,Medicare,General Ward,8,1
+P0296,34,Male,Elective,Minor,68,Oncology,Self-Pay,ICU,9,0
+P0297,50,Male,Urgent,Minor,7,General,Medicare,Surgery,23,0
+P0298,26,Female,Elective,Extreme,54,Neurology,Self-Pay,ER,5,1
+P0299,60,Female,Elective,Extreme,1,Orthopedics,Self-Pay,General Ward,24,1
+P0300,65,Male,Urgent,Extreme,44,General,Medicare,ICU,20,1
+P0301,56,Female,Emergency,Minor,45,Orthopedics,Medicaid,General Ward,18,0
+P0302,59,Male,Elective,Minor,47,Orthopedics,Private,Surgery,11,0
+P0303,43,Male,Emergency,Extreme,13,Neurology,Medicare,Surgery,15,1
+P0304,67,Male,Elective,Moderate,22,Oncology,Private,ER,28,0
+P0305,42,Male,Urgent,Extreme,21,Neurology,Medicare,ICU,22,1
+P0306,41,Female,Urgent,Moderate,86,General,Private,ICU,9,0
+P0307,30,Female,Elective,Moderate,92,General,Medicaid,ER,17,0
+P0308,77,Female,Urgent,Extreme,9,General,Medicaid,ER,27,1
+P0309,24,Male,Elective,Extreme,26,Neurology,Medicare,ICU,26,1
+P0310,74,Female,Urgent,Extreme,9,Orthopedics,Self-Pay,General Ward,12,1
+P0311,53,Male,Emergency,Minor,15,Orthopedics,Private,General Ward,7,0
+P0312,62,Female,Urgent,Moderate,10,Cardiology,Self-Pay,ER,10,0
+P0313,37,Male,Emergency,Minor,88,General,Self-Pay,General Ward,25,0
+P0314,82,Male,Urgent,Minor,42,Orthopedics,Self-Pay,ICU,26,1
+P0315,25,Male,Emergency,Extreme,72,Cardiology,Medicaid,Surgery,25,1
+P0316,33,Female,Urgent,Minor,24,Orthopedics,Medicare,Surgery,10,0
+P0317,31,Female,Emergency,Extreme,80,General,Medicare,General Ward,27,1
+P0318,32,Female,Elective,Moderate,49,Oncology,Medicaid,ER,13,0
+P0319,83,Female,Elective,Extreme,26,General,Medicaid,ER,19,1
+P0320,49,Male,Emergency,Minor,91,Neurology,Medicare,ER,11,0
+P0321,80,Female,Urgent,Minor,37,Orthopedics,Self-Pay,ER,13,0
+P0322,68,Female,Emergency,Extreme,68,Orthopedics,Private,ER,21,1
+P0323,42,Male,Urgent,Extreme,50,Neurology,Private,General Ward,8,1
+P0324,75,Male,Elective,Minor,24,Neurology,Private,Surgery,8,0
+P0325,80,Male,Urgent,Moderate,19,Oncology,Self-Pay,Surgery,4,0
+P0326,79,Female,Elective,Moderate,60,Orthopedics,Medicare,General Ward,15,1
+P0327,39,Male,Urgent,Extreme,39,Orthopedics,Medicaid,ER,28,1
+P0328,75,Male,Urgent,Moderate,74,Oncology,Medicare,General Ward,11,1
+P0329,75,Male,Urgent,Minor,89,Cardiology,Self-Pay,Surgery,11,1
+P0330,66,Female,Emergency,Extreme,18,Oncology,Medicaid,ICU,1,1
+P0331,69,Male,Emergency,Minor,19,General,Self-Pay,General Ward,17,0
+P0332,59,Female,Elective,Minor,36,Orthopedics,Private,ER,15,0
+P0333,87,Female,Elective,Moderate,74,Neurology,Private,Surgery,20,1
+P0334,32,Male,Emergency,Extreme,97,General,Self-Pay,Surgery,6,1
+P0335,71,Male,Elective,Extreme,55,Orthopedics,Medicaid,Surgery,24,1
+P0336,77,Female,Emergency,Moderate,69,Oncology,Medicaid,Surgery,22,0
+P0337,25,Male,Urgent,Minor,47,General,Medicare,ER,28,0
+P0338,70,Male,Elective,Minor,49,Orthopedics,Private,ICU,25,0
+P0339,77,Female,Elective,Minor,99,Cardiology,Medicare,Surgery,15,1
+P0340,22,Female,Emergency,Minor,98,Cardiology,Medicare,General Ward,9,0
+P0341,85,Male,Elective,Extreme,33,Neurology,Self-Pay,ICU,14,1
+P0342,23,Female,Elective,Extreme,21,Orthopedics,Self-Pay,Surgery,18,1
+P0343,64,Male,Urgent,Moderate,81,Cardiology,Medicare,ICU,26,1
+P0344,72,Male,Elective,Moderate,22,Oncology,Private,General Ward,17,0
+P0345,57,Male,Urgent,Extreme,48,Orthopedics,Self-Pay,Surgery,18,1
+P0346,69,Female,Emergency,Extreme,37,Oncology,Medicare,General Ward,5,1
+P0347,33,Male,Elective,Minor,15,Oncology,Medicare,ER,20,0
+P0348,30,Male,Urgent,Minor,35,Cardiology,Medicare,Surgery,20,0
+P0349,47,Male,Emergency,Moderate,92,Orthopedics,Medicare,Surgery,9,0
+P0350,36,Female,Elective,Extreme,71,General,Medicare,Surgery,11,1
+P0351,34,Female,Emergency,Moderate,32,Cardiology,Medicare,Surgery,24,0
+P0352,80,Female,Elective,Extreme,11,Cardiology,Self-Pay,ER,22,1
+P0353,36,Female,Emergency,Minor,10,Orthopedics,Private,Surgery,1,0
+P0354,75,Female,Emergency,Moderate,73,Orthopedics,Medicare,ICU,18,0
+P0355,72,Male,Urgent,Moderate,78,Oncology,Medicaid,Surgery,6,1
+P0356,79,Female,Emergency,Extreme,77,Orthopedics,Self-Pay,ER,27,1
+P0357,40,Female,Elective,Minor,57,Oncology,Self-Pay,Surgery,2,0
+P0358,26,Female,Elective,Moderate,25,Cardiology,Medicare,ICU,15,0
+P0359,29,Male,Urgent,Minor,2,Neurology,Self-Pay,ER,29,0
+P0360,18,Female,Elective,Moderate,64,General,Medicare,ER,26,0
+P0361,75,Female,Elective,Minor,35,Cardiology,Private,ICU,21,0
+P0362,18,Male,Elective,Extreme,7,Orthopedics,Private,ICU,14,1
+P0363,51,Female,Emergency,Moderate,85,General,Self-Pay,ICU,5,0
+P0364,65,Male,Emergency,Moderate,18,Neurology,Self-Pay,ICU,6,0
+P0365,18,Male,Elective,Minor,67,Neurology,Medicaid,ICU,6,0
+P0366,33,Male,Urgent,Minor,42,Oncology,Self-Pay,ER,22,0
+P0367,78,Male,Emergency,Moderate,39,General,Medicaid,ER,18,0
+P0368,81,Male,Urgent,Extreme,41,Oncology,Private,Surgery,14,1
+P0369,80,Female,Elective,Minor,75,Cardiology,Private,Surgery,10,1
+P0370,86,Male,Elective,Minor,24,General,Medicare,General Ward,14,0
+P0371,39,Male,Emergency,Minor,60,Cardiology,Private,Surgery,13,0
+P0372,84,Female,Elective,Moderate,46,Oncology,Medicaid,Surgery,3,1
+P0373,43,Male,Emergency,Moderate,19,General,Self-Pay,ICU,6,0
+P0374,33,Female,Elective,Moderate,68,Oncology,Medicare,ICU,29,0
+P0375,68,Female,Elective,Moderate,90,General,Medicaid,Surgery,8,0
+P0376,74,Female,Emergency,Extreme,42,Oncology,Self-Pay,General Ward,12,1
+P0377,46,Male,Emergency,Extreme,32,Neurology,Medicare,ICU,13,1
+P0378,86,Male,Emergency,Moderate,39,Oncology,Private,Surgery,11,0
+P0379,64,Male,Elective,Extreme,36,Neurology,Medicaid,Surgery,12,1
+P0380,79,Female,Elective,Minor,97,Oncology,Self-Pay,ER,1,1
+P0381,86,Male,Urgent,Minor,36,General,Medicare,General Ward,17,0
+P0382,33,Male,Emergency,Minor,3,General,Medicare,ER,16,0
+P0383,65,Male,Elective,Moderate,73,General,Private,General Ward,11,0
+P0384,56,Female,Elective,Minor,8,Orthopedics,Self-Pay,ICU,13,0
+P0385,50,Female,Emergency,Extreme,97,Cardiology,Private,General Ward,18,1
+P0386,40,Male,Urgent,Moderate,70,General,Private,Surgery,11,0
+P0387,27,Male,Emergency,Extreme,41,Neurology,Self-Pay,Surgery,28,1
+P0388,86,Male,Urgent,Minor,68,General,Self-Pay,General Ward,12,0
+P0389,51,Male,Elective,Minor,13,Orthopedics,Self-Pay,General Ward,6,0
+P0390,69,Female,Urgent,Minor,49,Neurology,Medicaid,General Ward,9,0
+P0391,27,Female,Elective,Moderate,60,Orthopedics,Self-Pay,ER,16,0
+P0392,36,Female,Emergency,Extreme,2,Neurology,Medicare,General Ward,4,1
+P0393,75,Female,Emergency,Moderate,60,Oncology,Private,ICU,3,1
+P0394,18,Male,Emergency,Moderate,5,Cardiology,Medicaid,ER,28,0
+P0395,86,Male,Urgent,Minor,44,Cardiology,Self-Pay,ER,16,1
+P0396,21,Male,Elective,Moderate,27,Orthopedics,Medicaid,General Ward,24,0
+P0397,33,Female,Emergency,Moderate,32,Cardiology,Self-Pay,ICU,27,0
+P0398,41,Male,Emergency,Minor,21,Orthopedics,Medicaid,ER,26,0
+P0399,19,Female,Elective,Moderate,8,Orthopedics,Private,Surgery,25,0
+P0400,49,Female,Emergency,Minor,72,Orthopedics,Private,ER,12,0
+P0401,41,Male,Elective,Minor,50,Cardiology,Medicare,General Ward,11,0
+P0402,29,Male,Elective,Minor,67,Orthopedics,Medicare,ICU,5,0
+P0403,67,Male,Elective,Minor,44,Cardiology,Self-Pay,General Ward,25,0
+P0404,52,Female,Elective,Moderate,58,Orthopedics,Private,Surgery,18,0
+P0405,50,Male,Elective,Minor,3,General,Medicaid,Surgery,19,0
+P0406,50,Female,Urgent,Minor,86,Orthopedics,Medicaid,Surgery,23,0
+P0407,78,Male,Emergency,Moderate,70,Neurology,Medicaid,General Ward,23,0
+P0408,68,Female,Urgent,Moderate,2,Orthopedics,Medicare,ER,6,0
+P0409,60,Female,Emergency,Extreme,87,Oncology,Medicaid,General Ward,22,1
+P0410,29,Male,Urgent,Moderate,44,Orthopedics,Medicare,ICU,18,0
+P0411,84,Female,Elective,Moderate,2,Neurology,Medicare,ER,26,0
+P0412,82,Female,Emergency,Extreme,81,Neurology,Self-Pay,Surgery,6,1
+P0413,50,Male,Emergency,Moderate,35,Cardiology,Medicaid,General Ward,4,0
+P0414,57,Female,Urgent,Moderate,98,General,Medicaid,Surgery,12,1
+P0415,60,Male,Urgent,Moderate,87,Orthopedics,Private,Surgery,19,1
+P0416,61,Female,Emergency,Moderate,30,Cardiology,Self-Pay,ICU,29,0
+P0417,46,Male,Urgent,Extreme,8,General,Private,ER,27,1
+P0418,30,Male,Urgent,Moderate,22,Orthopedics,Self-Pay,ICU,29,0
+P0419,29,Female,Urgent,Moderate,44,Oncology,Medicaid,ICU,2,0
+P0420,63,Female,Elective,Extreme,58,Orthopedics,Medicare,ICU,17,1
+P0421,19,Female,Elective,Minor,36,Neurology,Medicare,Surgery,11,0
+P0422,52,Female,Urgent,Extreme,69,Neurology,Medicare,ICU,11,1
+P0423,25,Female,Urgent,Minor,77,Oncology,Medicare,ICU,21,0
+P0424,43,Male,Elective,Extreme,93,Cardiology,Medicare,ER,16,1
+P0425,51,Female,Elective,Extreme,31,General,Private,ER,2,1
+P0426,24,Male,Emergency,Moderate,47,Orthopedics,Self-Pay,ICU,2,0
+P0427,85,Male,Emergency,Minor,55,Neurology,Medicaid,ER,23,1
+P0428,75,Female,Elective,Moderate,80,Cardiology,Private,ER,8,1
+P0429,46,Male,Urgent,Minor,62,Oncology,Self-Pay,ICU,13,0
+P0430,53,Male,Urgent,Extreme,30,Neurology,Medicare,Surgery,10,1
+P0431,38,Male,Urgent,Extreme,55,Oncology,Self-Pay,ICU,8,1
+P0432,53,Male,Urgent,Minor,16,Orthopedics,Self-Pay,ER,4,0
+P0433,27,Female,Emergency,Moderate,12,General,Medicare,Surgery,15,0
+P0434,41,Male,Elective,Moderate,17,Neurology,Medicare,General Ward,1,0
+P0435,81,Female,Urgent,Moderate,16,Neurology,Medicare,Surgery,11,0
+P0436,66,Female,Emergency,Moderate,12,Orthopedics,Medicaid,ER,7,0
+P0437,53,Male,Urgent,Extreme,8,Cardiology,Medicare,Surgery,17,1
+P0438,41,Female,Elective,Extreme,84,General,Medicaid,ICU,27,1
+P0439,40,Female,Emergency,Extreme,3,Neurology,Medicare,General Ward,20,1
+P0440,79,Female,Elective,Extreme,16,General,Medicaid,General Ward,24,1
+P0441,54,Male,Elective,Extreme,30,Neurology,Self-Pay,General Ward,18,1
+P0442,29,Female,Emergency,Moderate,23,General,Private,ER,22,0
+P0443,72,Female,Emergency,Moderate,92,Oncology,Self-Pay,ER,29,0
+P0444,30,Female,Emergency,Moderate,5,Neurology,Self-Pay,General Ward,22,0
+P0445,40,Male,Emergency,Moderate,84,General,Medicare,Surgery,12,0
+P0446,47,Female,Emergency,Extreme,65,Cardiology,Medicaid,General Ward,9,1
+P0447,34,Male,Emergency,Extreme,30,Oncology,Private,Surgery,5,1
+P0448,79,Male,Emergency,Extreme,21,Oncology,Medicare,Surgery,10,1
+P0449,30,Male,Urgent,Minor,84,Cardiology,Medicare,ER,4,0
+P0450,76,Male,Elective,Moderate,70,General,Medicare,Surgery,5,1
+P0451,36,Male,Emergency,Moderate,22,Orthopedics,Self-Pay,General Ward,28,0
+P0452,66,Male,Urgent,Extreme,82,Cardiology,Medicaid,ER,28,1
+P0453,29,Female,Urgent,Moderate,72,General,Medicaid,ICU,10,0
+P0454,78,Male,Urgent,Moderate,32,Cardiology,Private,ICU,11,1
+P0455,36,Female,Elective,Extreme,33,Cardiology,Medicaid,ER,21,1
+P0456,26,Female,Emergency,Minor,16,Neurology,Medicaid,General Ward,24,0
+P0457,88,Male,Urgent,Minor,76,General,Medicare,ICU,10,0
+P0458,45,Female,Elective,Minor,38,Orthopedics,Medicare,ICU,28,0
+P0459,69,Female,Elective,Extreme,98,Neurology,Self-Pay,Surgery,8,1
+P0460,33,Female,Elective,Moderate,14,Cardiology,Medicare,Surgery,2,0
+P0461,86,Female,Urgent,Extreme,36,Cardiology,Medicare,General Ward,23,1
+P0462,29,Male,Emergency,Extreme,97,Cardiology,Medicare,ER,8,1
+P0463,42,Female,Urgent,Moderate,23,General,Medicare,General Ward,16,0
+P0464,69,Male,Urgent,Minor,66,General,Self-Pay,ER,27,0
+P0465,70,Female,Emergency,Minor,85,Neurology,Medicare,ICU,22,0
+P0466,40,Female,Emergency,Extreme,2,Orthopedics,Private,Surgery,5,1
+P0467,33,Male,Emergency,Minor,91,Neurology,Private,General Ward,27,0
+P0468,74,Female,Elective,Extreme,73,Oncology,Private,General Ward,25,1
+P0469,56,Female,Emergency,Extreme,65,Cardiology,Private,ER,29,1
+P0470,70,Female,Urgent,Moderate,75,Cardiology,Medicare,ER,3,1
+P0471,59,Male,Emergency,Moderate,67,Cardiology,Private,General Ward,12,0
+P0472,75,Female,Urgent,Moderate,52,Neurology,Medicare,ER,13,0
+P0473,56,Male,Elective,Extreme,62,Neurology,Self-Pay,General Ward,13,1
+P0474,31,Female,Urgent,Moderate,23,Cardiology,Private,General Ward,10,0
+P0475,22,Male,Urgent,Minor,26,Neurology,Medicaid,General Ward,4,0
+P0476,52,Male,Emergency,Minor,68,General,Private,ICU,9,0
+P0477,35,Female,Emergency,Extreme,82,General,Private,ER,22,1
+P0478,26,Female,Urgent,Extreme,55,Neurology,Medicare,Surgery,24,1
+P0479,75,Male,Emergency,Moderate,6,Cardiology,Private,Surgery,23,0
+P0480,34,Male,Elective,Extreme,35,Neurology,Medicaid,ER,27,1
+P0481,24,Female,Elective,Extreme,22,Neurology,Medicare,General Ward,2,1
+P0482,63,Male,Emergency,Minor,43,Neurology,Medicare,Surgery,19,0
+P0483,30,Female,Elective,Minor,15,Oncology,Self-Pay,Surgery,1,0
+P0484,57,Female,Emergency,Moderate,86,General,Self-Pay,ER,25,0
+P0485,59,Female,Urgent,Extreme,60,Orthopedics,Private,Surgery,29,1
+P0486,26,Female,Urgent,Extreme,12,Orthopedics,Self-Pay,General Ward,7,1
+P0487,67,Male,Elective,Minor,49,Oncology,Self-Pay,ER,17,0
+P0488,44,Female,Emergency,Extreme,42,Neurology,Self-Pay,General Ward,3,1
+P0489,83,Male,Emergency,Minor,38,Oncology,Medicare,Surgery,20,0
+P0490,22,Female,Elective,Moderate,82,Oncology,Medicare,Surgery,20,0
+P0491,46,Male,Urgent,Minor,45,Cardiology,Medicare,General Ward,21,0
+P0492,54,Female,Elective,Extreme,35,General,Self-Pay,ICU,3,1
+P0493,55,Male,Urgent,Moderate,30,Orthopedics,Medicare,Surgery,3,0
+P0494,25,Male,Emergency,Minor,88,Neurology,Self-Pay,ICU,17,0
+P0495,82,Female,Urgent,Minor,30,Orthopedics,Medicare,Surgery,7,1
+P0496,34,Female,Elective,Moderate,78,Orthopedics,Medicare,ICU,27,0
+P0497,88,Female,Emergency,Moderate,6,General,Medicaid,ICU,26,0
+P0498,62,Female,Elective,Minor,67,Orthopedics,Private,ICU,14,0
+P0499,21,Male,Elective,Extreme,80,Orthopedics,Self-Pay,General Ward,17,1
+P0500,53,Female,Urgent,Minor,7,Oncology,Medicaid,ICU,18,0
